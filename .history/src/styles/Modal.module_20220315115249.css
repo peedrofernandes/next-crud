@@ -1,0 +1,26 @@
+.modal {
+  z-index: 2000;
+}
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  background-color: #000000ab;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.modalContainer {
+  position: relative;
+  top: 6%;
+  background-color: white;
+  min-width: 400px;
+  width: 60%;
+  min-height: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.5);
+  padding: 25px 40px;
+  overflow: auto;
+}

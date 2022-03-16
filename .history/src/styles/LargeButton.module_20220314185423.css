@@ -1,0 +1,27 @@
+.largeButton {
+  height: 35px;
+  background-color: #641CFD;
+  filter: opacity(0.8);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.06s ease-out;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+  padding: 2px 
+}
+
+.largeButton:hover {
+  filter: opacity(1);
+}
+
+.largeButton:active {
+  transform: scale(97%);
+}
+
+.largeButtonContainer > * {
+  margin: 0 5px;
+}

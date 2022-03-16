@@ -1,0 +1,4 @@
+type modalContextType = {
+  visible: boolean
+}
+

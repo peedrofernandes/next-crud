@@ -1,0 +1,16 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalHeader {
+  text-align: center;
+}
+
+.modalBody form {
+
+}
+
+.modal input {
+  width: 100%;
+}

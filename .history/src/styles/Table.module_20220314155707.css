@@ -1,0 +1,70 @@
+.tableContainer {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px black;
+  position: relative;
+  top: 50px;
+  padding: 30px;
+  width: calc(100vw - 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  min-height: 70vh;
+}
+
+.tableTitle {
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
+  color: #641CFD;
+}
+
+.tableTitle > h1 {
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.table tr {
+  box-shadow: 0px 1px 0 #cccccc;
+}
+
+.table td, .table th {
+  padding: 15px;
+  text-align: center;
+}
+
+.actionTd {
+  display: flex;
+  justify-content: center;
+}
+
+.actionTd svg {
+  margin: 10px;
+}
+
+.noTableDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.noTableDiv > h3 {
+  position: absolute;
+  text-align: center;
+  /* max-width: 100%; */
+}
+
+.noTableDiv > svg {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+

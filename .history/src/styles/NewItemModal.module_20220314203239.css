@@ -1,0 +1,24 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalHeader {
+  text-align: center;
+}
+
+.modalBody form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+.modalBody form input {
+  padding: 12px 5px;
+  margin: 15px 0;
+}
+
+.divider {
+  margin: 10px;
+}
