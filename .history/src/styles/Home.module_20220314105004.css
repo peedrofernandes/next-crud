@@ -1,9 +1,0 @@
-.container {
-  width: 100%;
-  scrollbar-gutter: 200px;
-}
-
-.viewportContainer {
-  width: 100vw;
-  min-height: 100vh;
-}

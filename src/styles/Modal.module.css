@@ -1,10 +1,11 @@
 .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 2000;
 }
 
 .modalBackground {
-  position: fixed;
-  top: 0;
   background-color: #000000ab;
   width: 100vw;
   height: 100vh;
@@ -69,3 +70,6 @@
   animation: hideContainer 0.2s ease-in-out forwards;
 }
 
+@media screen and (max-width: 900px) {
+
+}

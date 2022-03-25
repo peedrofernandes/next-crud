@@ -1,31 +1,40 @@
 import styles from '../../../styles/Modal.module.css'
-import { ModalProps } from '../../../constants/interfaces'
+import { GenericModalProps } from '../../../constants/interfaces'
 import { useState, useEffect } from 'react'
+import { useModal } from '../../../store/hooks'
 
-export default function Modal(props: ModalProps) {
+export default function Modal(props: GenericModalProps) {
+
+  const { visibility, setVisibility } = useModal()[props.type]
 
   const [style, setStyle] = useState({display: 'none'})
 
   useEffect(() => {
-    if (props.visibility) {
+    if (visibility) {
       setStyle({display: 'flex'})
     } else {
       setTimeout(() => {
         setStyle({display: 'none'})
       }, 200)
     }
-  }, [props.visibility])
-  
+  }, [visibility])
+
+  function handleOutsideCloseModal(e) {
+    if (e.target.className != styles.modalBackground) 
+      return
+    setVisibility(false)
+  }
+
   return (
     <div
       className={`
         ${styles.modal} 
         ${props.className} 
-        ${props.visibility ? styles.visible : styles.hidden}
+        ${visibility ? styles.visible : styles.hidden}
       `}
       style={style}
       >
-      <div className={styles.modalBackground}>
+      <div onClick={(e) => handleOutsideCloseModal(e)} className={styles.modalBackground}>
         <div className={styles.modalContainer}>
           {props.children}
         </div>

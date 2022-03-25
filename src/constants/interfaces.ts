@@ -22,17 +22,23 @@ export interface ButtonProps {
   disabled?: boolean
 }
 
-export interface ModalProps {
+export interface GenericModalProps {
   className?: string
   children?: any
   style?: any
-  visibility?: boolean
+  type: string
 }
 export interface ModalContextProps {
-  newItemModal: {
+  NewRegistryModal: {
     visibility: boolean
     setVisibility: (visibility: boolean) => void
   },
+  EditRegistryModal: {
+    visibility: boolean
+    setVisibility: (visibility: boolean) => void,
+    id: number,
+    setId: (id: number) => void
+  }
 }
 export interface ModalProviderProps {
   children: ReactNode

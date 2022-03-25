@@ -19,7 +19,7 @@ button {
   font-size: 100%;
   background-color: initial;
   cursor: pointer;
-  filter: opacity(0.9);
+  filter: opacity(0.8);
   transition: 0.06s ease-out;
 }
 button:active {
@@ -27,6 +27,10 @@ button:active {
 }
 button:hover {
   filter: opacity(1);
+  transform: scale(1.1)
+}
+button:hover:active {
+  transform: scale(1)
 }
 button:disabled {
   filter: opacity(0.5);

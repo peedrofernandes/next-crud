@@ -1,10 +1,14 @@
 import Head from 'next/head'
-import Modal from '../components/ui/Modais/modal'
-import NewItemModal from '../components/ui/Modais/newItemModal'
-import Table from '../components/ui/table'
+import Modal from '../components/ui/Modais/Modal'
+import NewRegistryModal from '../components/ui/Modais/NewRegistryModal'
+import EditRegistryModal from '../components/ui/Modais/EditRegistryModal'
+import Table from '../components/ui/Tables/Table'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
+  
+
   return (
     <div className={styles.container}>
 
@@ -16,6 +20,8 @@ export default function Home() {
 
       <main className={styles.viewportContainer}>
         <Table />
+        <NewRegistryModal></NewRegistryModal>
+        <EditRegistryModal></EditRegistryModal>
       </main>
       
         <div style={{
@@ -39,7 +45,7 @@ export default function Home() {
         <h1>Conteudo</h1>
       </div>
 
-      <NewItemModal></NewItemModal>
+      
       
     </div>
   )

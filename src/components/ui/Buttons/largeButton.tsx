@@ -1,4 +1,4 @@
-import Button from './button'
+import Button from './Button'
 import styles from '../../../styles/LargeButton.module.css'
 import PlusIcon from '../../icons/plusIcon'
 import { ButtonProps } from '../../../constants/interfaces'
