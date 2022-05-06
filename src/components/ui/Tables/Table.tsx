@@ -1,14 +1,14 @@
 import styles from '../../../styles/Table.module.css'
-import EditIcon from '../../icons/EditIcon'
+import EditIcon from '../../icons/EditIcon';
 import PlusIcon from '../../icons/PlusIcon';
-import TrashIcon from '../../icons/TrashIcon'
+import TrashIcon from '../../icons/TrashIcon';
 import AddFilesImg from '../../images/AddFilesImg';
 import IconButton from '../Buttons/IconButton';
-import LargeButton from '../Buttons/LargeButton'
+import LargeButton from '../Buttons/LargeButton';
 import { useModal, useList } from '../../../store/hooks';
 import { useEffect, useState } from 'react';
 import ConfigureIcon from '../../icons/ConfigureIcon';
-import EditModal from '../Modais/EditRegistryModal';
+import EditRegistryModal from '../Modais/EditRegistryModal';
 
 export default function Table() {
 

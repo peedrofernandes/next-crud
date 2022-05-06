@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Modal from '../components/ui/Modais/Modal'
-import NewRegistryModal from '../components/ui/Modais/NewRegistryModal'
+import NewRegistryModal from "../components/ui/Modais/NewRegistryModal"
 import EditRegistryModal from '../components/ui/Modais/EditRegistryModal'
 import Table from '../components/ui/Tables/Table'
 import styles from '../styles/Home.module.css'

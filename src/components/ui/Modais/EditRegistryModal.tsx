@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useList, useModal } from "../../../store/hooks";
+import { useList, useModal } from '../../../store/hooks'
 import styles from '../../../styles/RegistryModal.module.css'
 import Modal from "./Modal";
 
